@@ -1,0 +1,31 @@
+.selector {
+  border: 5px solid black;
+  height: 300px;
+  width: 400px;
+}
+h1 {
+  background-color: aqua;
+}
+.identifer {
+  margin-top: 30px;
+  border: 5px solid black;
+  height: 200px;
+  width: 400px;
+}
+
+#myelement {
+  background-color: blue;
+}
+.classification {
+  margin-top: 30px;
+  border: 5px solid black;
+  height: 100px;
+  width: 400px;
+  background-color: blueviolet;
+}
+*star {
+  margin-top: 30px;
+  border: 5px solid black;
+  height: 100px;
+  width: 400px;
+}
