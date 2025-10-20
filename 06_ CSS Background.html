@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Backgrounds</title>
+    <style>
+      .background-image-example {
+        background-image: url(".vscode/download.jpeg");
+        background-size: cover;
+        background-position: center;
+        color: rgb(245, 5, 45);
+        height: 400px; /* Adjust the height to fit your needs */
+      }
+      .repeat {
+        background-image: url("racing-car-orange-color-isolated-background_1308-69652.jpg");
+      }
+      .attach {
+        background-image: url("racing-car-orange-color-isolated-background_1308-69652.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        min-height: 20vp;
+      }
+      .position {
+        background-image: url("racing-car-orange-color-isolated-background_1308-69652.jpg");
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        border: 2px solid black;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>CSS Background</h3>
+    <p>
+      CSS Backgrounds allow you to set the background color, image, size, and
+      position for HTML elements.
+    </p>
+    <h3>CSS Background properties</h3>
+    <ul>
+      <li>background-color: Sets the background color of an element.</li>
+      <li>
+        background-image: Specifies one or more background images for an
+        element.
+      </li>
+      <li>background-size: Defines the size of the background images.</li>
+      <li>
+        background-position: Specifies the position of the background images.
+      </li>
+      <li>
+        background-repeat: Sets if/how background images will be repeated.
+      </li>
+      <li>
+        background-attachment: Determines whether the background image scrolls
+      </li>
+    </ul>
+    <h3>Background color</h3>
+    <p style="background-color: aqua">
+      CSS Background properties are powerful tools for creating visually
+      appealing and functional web designs. By understanding and applying these
+      properties effectively, you can craft engaging and responsive backgrounds
+      that enhance user experience and align with your design goals.
+    </p>
+    <h3>Background image</h3>
+    <div class="background-image-example">
+      <h1>Twinkle Twinkle Little Star</h1>
+      <p>Twinkle, twinkle, little star,</p>
+      <p>How I wonder what you are!</p>
+      <p>Up above the world so high,</p>
+      <p>Like a diamond in the sky.</p>
+      <p>Twinkle, twinkle, little star,</p>
+      <p>How I wonder what you are!</p>
+    </div>
+    <div class="repeat">
+      <h3>background repeat</h3>
+      <h1>Hello World!</h1>
+      <p>Strange background image...</p>
+      <h1>Hello World!</h1>
+      <p>Strange background image...</p>
+      <h1>Hello World!</h1>
+      <p>Strange background image...</p>
+      <h1>Hello World!</h1>
+      <p>Strange background image...</p>
+    </div>
+    <div class="attach">
+      <h3>Background attachment</h3>
+      <h1>Twinkle Twinkle Little Star</h1>
+      <p>Twinkle, twinkle, little star,</p>
+      <p>How I wonder what you are!</p>
+      <p>Up above the world so high,</p>
+      <p>Like a diamond in the sky.</p>
+      <p>Twinkle, twinkle, little star,</p>
+      <p>How I wonder what you are!</p>
+      <h1>Twinkle Twinkle Little Star</h1>
+      <p>Twinkle, twinkle, little star,</p>
+      <p>How I wonder what you are!</p>
+      <p>Up above the world so high,</p>
+      <p>Like a diamond in the sky.</p>
+      <p>Twinkle, twinkle, little star,</p>
+      <p>How I wonder what you are!</p>
+      <h1>Twinkle Twinkle Little Star</h1>
+      <p>Twinkle, twinkle, little star,</p>
+      <p>How I wonder what you are!</p>
+      <p>Up above the world so high,</p>
+      <p>Like a diamond in the sky.</p>
+      <p>Twinkle, twinkle, little star,</p>
+      <p>How I wonder what you are!</p>
+    </div>
+    <div class="position">
+      <p>background podition</p>
+    </div>
+  </body>
+</html>
