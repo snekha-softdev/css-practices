@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Styles Example</title>
+    <style>
+      .border-style th,
+      .border-style td {
+        border: 2px solid #ff4500;
+        padding: 20px;
+      }
+      .border-style table {
+        border-collapse: collapse;
+        margin-bottom: 30px;
+      }
+
+      .padding-style th,
+      .padding-style td {
+        border: 2px solid #1e90ff;
+        padding: 25px;
+      }
+      .padding-style table {
+        border-collapse: collapse;
+        margin-bottom: 30px;
+      }
+
+      .text-align th,
+      .text-align td {
+        border: 3px solid #32cd32;
+        text-align: center;
+        padding: 20px;
+      }
+      .text-align table {
+        border-collapse: collapse;
+        margin-bottom: 30px;
+      }
+
+      .vertical-align th,
+      .vertical-align td {
+        border: 2px solid #daa520;
+        vertical-align: middle;
+        padding: 20px;
+      }
+      .vertical-align table {
+        border-collapse: collapse;
+        margin-bottom: 30px;
+      }
+
+      .width th,
+      .width td {
+        border: 2px solid #ff8c00;
+        width: 90px;
+        padding: 20px;
+      }
+      .width table {
+        border-collapse: collapse;
+        margin-bottom: 30px;
+      }
+
+      .height th,
+      .height td {
+        border: 2px solid #db7093;
+        height: 80px;
+        padding: 20px;
+      }
+      .height table {
+        border-collapse: collapse;
+        margin-bottom: 30px;
+      }
+
+      .normal-border th,
+      .normal-border td {
+        border: 2px solid #8b4513;
+        padding: 20px;
+      }
+      .normal-border table {
+        border-collapse: collapse;
+        margin-bottom: 30px;
+      }
+
+      .collapse-border th,
+      .collapse-border td {
+        border: 2px solid #ff6347;
+        padding: 20px;
+      }
+      .collapse-border table {
+        border-collapse: collapse;
+        margin-bottom: 30px;
+      }
+
+      .background-color table {
+        background-color: #556b2f;
+        border-collapse: collapse;
+        margin-bottom: 30px;
+      }
+      .background-color th,
+      .background-color td {
+        border: 2px solid #f5deb3;
+        padding: 20px;
+        color: #fafad2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="border-style">
+      <h1>Table Border</h1>
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Module</th>
+          <th>Length</th>
+        </tr>
+        <tr>
+          <td>101</td>
+          <td>HTML Basics</td>
+          <td>4 Weeks</td>
+        </tr>
+        <tr>
+          <td>102</td>
+          <td>CSS Fundamentals</td>
+          <td>5 Weeks</td>
+        </tr>
+        <tr>
+          <td>103</td>
+          <td>JavaScript Core</td>
+          <td>6 Weeks</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="padding-style">
+      <h1>Padding</h1>
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Module</th>
+          <th>Length</th>
+        </tr>
+        <tr>
+          <td>201</td>
+          <td>React JS</td>
+          <td>7 Weeks</td>
+        </tr>
+        <tr>
+          <td>202</td>
+          <td>Node JS</td>
+          <td>8 Weeks</td>
+        </tr>
+        <tr>
+          <td>203</td>
+          <td>Express JS</td>
+          <td>6 Weeks</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="text-align">
+      <h1>Text Align</h1>
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Module</th>
+          <th>Length</th>
+        </tr>
+        <tr>
+          <td>301</td>
+          <td>MongoDB</td>
+          <td>5 Weeks</td>
+        </tr>
+        <tr>
+          <td>302</td>
+          <td>SQL Basics</td>
+          <td>4 Weeks</td>
+        </tr>
+        <tr>
+          <td>303</td>
+          <td>Python</td>
+          <td>7 Weeks</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="vertical-align">
+      <h1>Vertical Align</h1>
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Module</th>
+          <th>Length</th>
+        </tr>
+        <tr>
+          <td>401</td>
+          <td>Git Basics</td>
+          <td>3 Weeks</td>
+        </tr>
+        <tr>
+          <td>402</td>
+          <td>GitHub</td>
+          <td>2 Weeks</td>
+        </tr>
+        <tr>
+          <td>403</td>
+          <td>Version Control</td>
+          <td>4 Weeks</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="width_height">
+      <h1>Width</h1>
+      <div class="width">
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Module</th>
+            <th>Length</th>
+          </tr>
+          <tr>
+            <td>501</td>
+            <td>Bootstrap</td>
+            <td>3 Weeks</td>
+          </tr>
+          <tr>
+            <td>502</td>
+            <td>Tailwind CSS</td>
+            <td>4 Weeks</td>
+          </tr>
+          <tr>
+            <td>503</td>
+            <td>Material UI</td>
+            <td>2 Weeks</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="height">
+        <h1>Height</h1>
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Module</th>
+            <th>Length</th>
+          </tr>
+          <tr>
+            <td>601</td>
+            <td>SASS</td>
+            <td>3 Weeks</td>
+          </tr>
+          <tr>
+            <td>602</td>
+            <td>LESS</td>
+            <td>2 Weeks</td>
+          </tr>
+          <tr>
+            <td>603</td>
+            <td>PostCSS</td>
+            <td>3 Weeks</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="border-collapse">
+      <div class="normal-border">
+        <h1>Normal Border</h1>
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Module</th>
+            <th>Length</th>
+          </tr>
+          <tr>
+            <td>701</td>
+            <td>Docker</td>
+            <td>4 Weeks</td>
+          </tr>
+          <tr>
+            <td>702</td>
+            <td>Kubernetes</td>
+            <td>5 Weeks</td>
+          </tr>
+          <tr>
+            <td>703</td>
+            <td>CI/CD</td>
+            <td>6 Weeks</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="collapse-border">
+        <h1>Collapse Border</h1>
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Module</th>
+            <th>Length</th>
+          </tr>
+          <tr>
+            <td>801</td>
+            <td>Python Advanced</td>
+            <td>7 Weeks</td>
+          </tr>
+          <tr>
+            <td>802</td>
+            <td>Django</td>
+            <td>6 Weeks</td>
+          </tr>
+          <tr>
+            <td>803</td>
+            <td>Flask</td>
+            <td>5 Weeks</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="background-color">
+      <h1>Background Color</h1>
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Module</th>
+          <th>Length</th>
+        </tr>
+        <tr>
+          <td>901</td>
+          <td>Linux Basics</td>
+          <td>4 Weeks</td>
+        </tr>
+        <tr>
+          <td>902</td>
+          <td>Bash Scripting</td>
+          <td>3 Weeks</td>
+        </tr>
+        <tr>
+          <td>903</td>
+          <td>Shell Programming</td>
+          <td>5 Weeks</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

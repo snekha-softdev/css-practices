@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinators Example</title>
+    <style>
+   
+
+      .descendant-combinator h1 {
+        color: #00ffff;
+      }
+
+      .child-selector > h1 {
+        color: bisque;
+      }
+
+      .adjacent-selector + h1,
+      .adjacent-selector + p {
+        color: rgb(162, 130, 130);
+      }
+
+      .general-sibling ~ p {
+        color: #1e1ec2;
+      }
+
+      div {
+        margin-bottom: 40px;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 15px;
+        border-radius: 8px;
+      }
+
+      h1 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="descendant-combinator">
+      <h1>Styled using Descendant Combinator</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus optio
+        dolorum ducimus deleniti eum.
+      </p>
+      <h1>Another heading styled by Descendant Combinator</h1>
+    </div>
+
+    <div class="child-selector">
+      <h1>Styled using Child Combinator</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus optio
+        dolorum ducimus deleniti eum.
+      </p>
+      <h1>Another heading styled by Child Combinator</h1>
+    </div>
+
+    <div class="adjacent-selector">
+      <h1>Styled using Adjacent Sibling Combinator</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus optio
+        dolorum ducimus deleniti eum.
+      </p>
+    </div>
+
+    <div class="general-sibling">
+      <p>Styled using General Sibling Combinator</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus optio
+        dolorum ducimus deleniti eum.
+      </p>
+      <p>Another paragraph styled by General Sibling Combinator</p>
+    </div>
+  </body>
+</html>

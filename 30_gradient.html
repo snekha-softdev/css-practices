@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gradient</title>
+    <style>
+      .linear-gradient {
+        height: 100px;
+        width: 100px;
+        background: linear-gradient(to left, rgb(0, 255, 89), rgb(21, 169, 255));
+      }
+      .radial-gradient {
+        margin-top: 10px;
+        height: 100px;
+        width: 100px;
+        background: radial-gradient(circle, rgb(138, 169, 36), rgb(184, 33, 46), rgb(0, 11, 0));
+      }
+      .conic-gradient {
+        margin-top: 10px;
+        height: 100px;
+        width: 100px;
+        background: conic-gradient(from 50deg, rgb(190, 77, 77), yellow, green, red);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="linear-gradient"></div>
+    <div class="radial-gradient"></div>
+    <div class="conic-gradient"></div>
+  </body>
+</html>

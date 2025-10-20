@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z-Index Example</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .relative-box {
+      position: relative;
+      height: 200px;
+      width: 200px;
+      background-color: rgb(135, 206, 250);
+      margin: 20px;
+    }
+
+    .absolute-box {
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      background-color: rgb(199, 21, 133);
+      top: 50px;
+      left: 50px;
+    }
+
+    .stack-container {
+      position: relative;
+      background-color: rgb(138, 43, 226);
+      height: 400px;
+      width: 400px;
+      margin: 20px auto;
+    }
+
+    .stack-container div {
+      position: absolute;
+      height: 50px;
+      width: 50px;
+    }
+
+    .stack1 { background-color: wheat; z-index: 5; top: 20px; left: 20px; }
+    .stack2 { background-color: rgb(0, 206, 209); z-index: 4; top: 60px; left: 60px; }
+    .stack3 { background-color: rgb(173, 255, 47); z-index: 3; top: 100px; left: 100px; }
+    .stack4 { background-color: rgb(255, 140, 0); z-index: 2; top: 140px; left: 140px; }
+    .stack5 { background-color: rgb(186, 85, 211); z-index: 1; top: 180px; left: 180px; }
+
+    .negative-container {
+      position: relative;
+      height: 400px;
+      width: 400px;
+      background-color: rgb(175, 238, 238);
+      margin: 20px auto;
+    }
+
+    .negative-container .neg1 {
+      position: absolute;
+      background-color: beige;
+      height: 50px;
+      width: 50px;
+      z-index: 1;
+      top: 20px;
+      left: 20px;
+    }
+
+    .negative-container .neg2 {
+      position: absolute;
+      background-color: rgb(189, 183, 107);
+      height: 50px;
+      width: 50px;
+      z-index: 0;
+      top: 60px;
+      left: 60px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="relative-box"></div>
+  <div class="absolute-box"></div>
+
+  <div class="stack-container">
+    <div class="stack1"></div>
+    <div class="stack2"></div>
+    <div class="stack3"></div>
+    <div class="stack4"></div>
+    <div class="stack5"></div>
+  </div>
+
+  <div class="negative-container">
+    <div class="neg1"></div>
+    <div class="neg2"></div>
+  </div>
+
+</body>
+</html>

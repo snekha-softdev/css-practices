@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Example</title>
+  <style>
+    .container {
+      position: relative;
+      width: 80%;
+      height: 1500px;
+      margin: 40px auto;
+      background-color: rgb(245, 105, 105);
+      border-radius: 10px;
+      padding-top: 20px;
+    }
+
+    .sticky-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      height: 60px;
+      background-color: rgb(255, 165, 0);
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.5rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="sticky-header">
+      This is sticky
+    </div>
+  </div>
+
+</body>
+</html>

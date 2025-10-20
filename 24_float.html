@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float Examples</title>
+    <style>
+      body {
+        margin: 20px;
+      }
+
+      .float-section {
+        margin-bottom: 40px;
+      }
+
+      .float-section h2 {
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .float-left li {
+        float: left;
+        list-style: none;
+        margin-right: 15px;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+
+      .float-right li {
+        float: right;
+        list-style: none;
+        margin-left: 15px;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+
+      .float-none li {
+        float: none;
+        list-style: none;
+        margin-bottom: 5px;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+
+      /* Clear floats */
+      ul::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="float-section float-left">
+      <h2>Float Left</h2>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Projects</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <div class="float-section float-right">
+      <h2>Float Right</h2>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Projects</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <div class="float-section float-none">
+      <h2>Float None</h2>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Projects</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+  </body>
+</html>

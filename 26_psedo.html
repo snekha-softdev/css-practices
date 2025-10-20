@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class Example</title>
+    <style>
+        .hover {
+            color: rgb(209, 22, 59);
+            background-color: antiquewhite;
+        }
+        .hover:hover {
+            background-color: rgb(19, 216, 124);
+            color: rgb(29, 30, 30);
+        }
+
+        .focus input:focus {
+            color: rgb(17, 61, 99);
+            background-color: antiquewhite;
+        }
+
+        .first-child p:first-child {
+            color: rgb(85, 8, 151);
+            background-color: black;
+        }
+
+        .n_child p {
+            color: rgb(20, 120, 206);
+            background-color: black;
+        }
+        .n_child p:nth-child(1),
+        .n_child p:nth-child(3) {
+            color: black;
+            background-color: rgb(10, 206, 232);
+        }
+
+        .visited1 a:visited {
+            color: aquamarine;
+        }
+
+        .fstltr p::first-letter {
+            color: rgb(49, 165, 127);
+            font-size: 40px;
+        }
+
+        .bfpg p::before {
+            content: "This is lorem: ";
+            font-weight: bolder;
+            font-size: 30px;
+        }
+
+        .odd_even p:nth-last-child(odd) {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hover">
+        <p>This is styled by the hover</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>This is also styled by hover</p>
+    </div>
+
+    <div class="focus">
+       <input type="text" placeholder="Enter a number">
+    </div>
+
+    <div class="first-child">
+        <p>This is styled by the first child</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>This is also styled by first child</p>
+    </div>
+
+    <div class="n_child">
+        <p>This is styled by the n-th child</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>This is also styled n-th child</p>
+    </div>
+
+    <div class="visited1">
+        <a href="https://meet.google.com/landing">
+            <p>This is styled by the visited</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p>This is also styled by visited</p>
+        </a>
+    </div>
+
+    <div class="fstltr">
+        <p>First letter styled by fstltr class</p>
+    </div>
+
+    <div class="bfpg">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
+    </div>
+
+    <div class="odd_even">
+        <p>This is styled by the odd</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>This is also styled by odd</p>
+    </div>
+
+</body>
+</html>

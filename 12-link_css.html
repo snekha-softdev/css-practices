@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Links Example</title>
+    <style>
+      .link-section {
+        padding: 25px;
+        margin: 25px;
+        border-radius: 8px;
+      }
+
+      .basic-link a {
+        display: inline-block;
+        padding: 18px 30px;
+        background-color: #ffe4c4;
+        color: #000;
+        text-decoration: underline;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+      .basic-link a:hover {
+        background-color: #ffd700;
+        color: #fff;
+      }
+
+      .colored-link a {
+        background-color: #00ffff;
+        color: #111;
+        padding: 20px 25px;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 6px;
+        transition: 0.3s;
+      }
+      .colored-link a:hover {
+        background-color: #008b8b;
+        color: #fff;
+      }
+
+      .no-decoration a {
+        background-color: #a52a2a;
+        color: #ffe4c4;
+        padding: 20px 25px;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 5px;
+      }
+      .no-decoration a:hover {
+        text-decoration: underline;
+        color: #ffff00;
+      }
+
+      .bold-link a {
+        font-weight: 700;
+        background-color: #9393e3;
+        color: #281e11;
+        padding: 20px 25px;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 5px;
+      }
+      .bold-link a:hover {
+        background-color: #6a6ad1;
+        color: #fff;
+      }
+
+      .link-info h2 {
+        margin: 10px 0;
+        font-size: 1.5rem;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="link-info link-section">
+      <h2>Color</h2>
+      <h2>Text Decoration</h2>
+      <h2>Font Weight</h2>
+      <h2>Background Color</h2>
+    </div>
+
+    <div class="link-info link-section">
+      <h2>Link States</h2>
+      <h2>:link</h2>
+      <h2>:visited</h2>
+      <h2>:hover</h2>
+      <h2>:active</h2>
+    </div>
+
+    <div class="basic-link link-section">
+      <a href="./01_introduction.html">Introduction about the HTML</a>
+    </div>
+
+    <div class="colored-link link-section">
+      <a href="./03_CSS_style.html">Example of the link color</a>
+    </div>
+
+    <div class="no-decoration link-section">
+      <a href="./06_Box_model.html">Example of the text decoration</a>
+    </div>
+
+    <div class="bold-link link-section">
+      <a href="./07_css_outline_style.html">Example of the font weight</a>
+    </div>
+  </body>
+</html>
